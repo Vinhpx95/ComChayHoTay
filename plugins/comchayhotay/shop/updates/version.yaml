@@ -1,1 +1,12 @@
 1.0.1: First version of Shop
+1.1.1: 
+  - Init db
+  - create_banners_table.php
+  - create_categories_table.php
+  - create_customer_infos_table.php
+  - create_events_table.php
+  - create_ingredients_table.php
+  - create_order_products_table.php
+  - create_orders_table.php
+  - create_products_table.php
+  - create_restaurant_infos_table.php
