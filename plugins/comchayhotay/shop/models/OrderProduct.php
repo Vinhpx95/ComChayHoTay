@@ -10,7 +10,7 @@ class OrderProduct extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'comchayhotay_shop_order_products';
+    public $table = 'order_products';
 
     /**
      * @var array Guarded fields

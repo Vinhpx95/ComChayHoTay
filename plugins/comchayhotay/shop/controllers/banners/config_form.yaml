@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Banner
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/banner/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Banner
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/banners
+
+# Create page
+create:
+    title: Create Banner
+    redirect: comchayhotay/shop/banners/update/:id
+    redirectClose: comchayhotay/shop/banners
+
+# Update page
+update:
+    title: Edit Banner
+    redirect: comchayhotay/shop/banners
+    redirectClose: comchayhotay/shop/banners
+
+# Preview page
+preview:
+    title: Preview Banner

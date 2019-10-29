@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Event
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/event/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Event
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/events
+
+# Create page
+create:
+    title: Create Event
+    redirect: comchayhotay/shop/events/update/:id
+    redirectClose: comchayhotay/shop/events
+
+# Update page
+update:
+    title: Edit Event
+    redirect: comchayhotay/shop/events
+    redirectClose: comchayhotay/shop/events
+
+# Preview page
+preview:
+    title: Preview Event

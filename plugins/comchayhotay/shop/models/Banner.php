@@ -10,7 +10,7 @@ class Banner extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'comchayhotay_shop_banners';
+    public $table = 'banners';
 
     /**
      * @var array Guarded fields

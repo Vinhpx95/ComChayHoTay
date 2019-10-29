@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/category/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Category
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: comchayhotay/shop/categories/update/:id
+    redirectClose: comchayhotay/shop/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: comchayhotay/shop/categories
+    redirectClose: comchayhotay/shop/categories
+
+# Preview page
+preview:
+    title: Preview Category

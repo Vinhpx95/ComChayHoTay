@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Order
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/order/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Order
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/orders
+
+# Create page
+create:
+    title: Create Order
+    redirect: comchayhotay/shop/orders/update/:id
+    redirectClose: comchayhotay/shop/orders
+
+# Update page
+update:
+    title: Edit Order
+    redirect: comchayhotay/shop/orders
+    redirectClose: comchayhotay/shop/orders
+
+# Preview page
+preview:
+    title: Preview Order

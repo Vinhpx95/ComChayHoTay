@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/product/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Product
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: comchayhotay/shop/products/update/:id
+    redirectClose: comchayhotay/shop/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: comchayhotay/shop/products
+    redirectClose: comchayhotay/shop/products
+
+# Preview page
+preview:
+    title: Preview Product

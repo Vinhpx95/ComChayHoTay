@@ -10,7 +10,7 @@ class CustomerInfo extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'comchayhotay_shop_customer_infos';
+    public $table = 'customer_infos';
 
     public $timestamps = true;
 

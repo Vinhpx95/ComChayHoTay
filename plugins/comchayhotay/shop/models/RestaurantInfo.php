@@ -10,7 +10,7 @@ class RestaurantInfo extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'comchayhotay_shop_restaurant_infos';
+    public $table = 'restaurant_infos';
 
     /**
      * @var array Guarded fields

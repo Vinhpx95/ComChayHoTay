@@ -10,7 +10,7 @@ class Ingredient extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'comchayhotay_shop_ingredients';
+    public $table = 'ingredients';
 
     /**
      * @var array Guarded fields

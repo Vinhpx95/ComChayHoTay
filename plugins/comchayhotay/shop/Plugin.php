@@ -81,15 +81,57 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'shop' => [
-                'label'       => 'Shop',
-                'url'         => Backend::url('comchayhotay/shop/mycontroller'),
-                'icon'        => 'icon-leaf',
+                'label'       => 'Cửa hàng',
+                'url'         => Backend::url('comchayhotay/shop/orders'),
+                'icon'        => 'icon-shopping-basket',
                 'permissions' => ['comchayhotay.shop.*'],
                 'order'       => 500,
+                'sideMenu' => [
+                    'orders' => [
+                        'label'       => 'Hóa đơn',
+                        'icon'        => 'icon-file-text-o',
+                        'url'         => Backend::url('comchayhotay/shop/orders'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'events' => [
+                        'label'       => 'Sự kiện',
+                        'icon'        => 'icon-gift',
+                        'url'         => Backend::url('comchayhotay/shop/event'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'banners' => [
+                        'label'       => 'Banner',
+                        'icon'        => 'icon-map-o',
+                        'url'         => Backend::url('comchayhotay/shop/banners'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'products' => [
+                        'label'       => 'Sản phẩm',
+                        'icon'        => 'icon-key',
+                        'url'         => Backend::url('comchayhotay/shop/products'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'categories' => [
+                        'label'       => 'Danh mục',
+                        'icon'        => 'icon-list',
+                        'url'         => Backend::url('comchayhotay/shop/categories'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'customer_infos' => [
+                        'label'       => 'Thông tin khách hàng',
+                        'icon'        => 'icon-copy',
+                        'url'         => Backend::url('comchayhotay/shop/customer_infos'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                    'restaurant_info' => [
+                        'label'       => 'Thông tin nhà hàng',
+                        'icon'        => 'icon-info-circle',
+                        'url'         => Backend::url('comchayhotay/shop/restaurant_info'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
+                ]
             ],
         ];
     }

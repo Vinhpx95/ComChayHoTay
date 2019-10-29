@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Restaurant Info
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/restaurant_info/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\RestaurantInfo
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/restaurant_info
+
+# Create page
+create:
+    title: Create Restaurant Info
+    redirect: comchayhotay/shop/restaurant_info/update/:id
+    redirectClose: comchayhotay/shop/restaurant_info
+
+# Update page
+update:
+    title: Edit Restaurant Info
+    redirect: comchayhotay/shop/restaurant_info
+    redirectClose: comchayhotay/shop/restaurant_info
+
+# Preview page
+preview:
+    title: Preview Restaurant Info

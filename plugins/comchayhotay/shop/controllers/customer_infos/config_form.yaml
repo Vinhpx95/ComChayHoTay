@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Customer Info
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/customer_info/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\CustomerInfo
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/customer_infos
+
+# Create page
+create:
+    title: Create Customer Info
+    redirect: comchayhotay/shop/customer_infos/update/:id
+    redirectClose: comchayhotay/shop/customer_infos
+
+# Update page
+update:
+    title: Edit Customer Info
+    redirect: comchayhotay/shop/customer_infos
+    redirectClose: comchayhotay/shop/customer_infos
+
+# Preview page
+preview:
+    title: Preview Customer Info
