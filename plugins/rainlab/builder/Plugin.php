@@ -42,6 +42,7 @@ class Plugin extends PluginBase
 
     public function registerNavigation()
     {
+        //return [];
         return [
             'builder' => [
                 'label'       => 'rainlab.builder::lang.plugin.name',
