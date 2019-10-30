@@ -6,3 +6,15 @@ columns:
     id:
         label: ID
         searchable: true
+    phone1:
+        label: Số điện thoại 1
+        type: text
+        searchable: true
+    phone2:
+        label: Số điện thoại 2
+        type: text
+        searchable: true
+    open_time:
+        label: Thời gian mở cửa
+        type: text
+        searchable: true

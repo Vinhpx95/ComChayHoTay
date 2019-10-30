@@ -6,3 +6,15 @@ columns:
     id:
         label: ID
         searchable: true
+    name:
+        label: Tên
+        type: text
+        searchable: true
+    phone:
+        label: Phone
+        type: text
+        searchable: true
+    address:
+        label: Địa chỉ
+        type: text
+        searchable: true

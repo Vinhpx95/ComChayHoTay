@@ -3,6 +3,40 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    phone1:
+        label: Số điện thoại 1
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    phone2:
+        label: Số điện thoại 2
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    open_time:
+        label: Giờ mở cửa
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    email:
+        label: Email
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    facebook:
+        label: Facebook
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    address:
+        label: Địa chỉ
+        span: auto
+        disabled: 0
+        required: 1
+        type: text
+    

@@ -64,4 +64,6 @@
   'Comchayhotay\\Shop\\Models\\CustomerInfo' => 'plugins\\comchayhotay\\shop\\models\\CustomerInfo.php',
   'comchayhotay\\shop\\Controllers\\restaurantinfo' => 'plugins\\comchayhotay\\shop\\controllers\\restaurantinfo.php',
   'Comchayhotay\\Shop\\Models\\RestaurantInfo' => 'plugins\\comchayhotay\\shop\\models\\RestaurantInfo.php',
+  'comchayhotay\\shop\\Controllers\\products' => 'plugins\\comchayhotay\\shop\\controllers\\products.php',
+  'Comchayhotay\\Shop\\Models\\Product' => 'plugins\\comchayhotay\\shop\\models\\Product.php',
 );

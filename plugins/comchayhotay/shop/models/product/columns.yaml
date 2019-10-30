@@ -1,8 +1,23 @@
-# ===================================
-#  List Column Definitions
-# ===================================
-
 columns:
     id:
         label: ID
+        type: number
         searchable: true
+    name:
+        label: Tên
+        type: text
+        searchable: true
+        sortable: true
+    category_id:
+        label: 'Loại sản phẩm'
+        type: text
+        select: name
+        relation: category
+    price:
+        label: Giá
+        type: number
+        sortable: true
+    status:
+        label: 'Còn hàng'
+        type: switch
+        sortable: true
