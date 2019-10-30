@@ -16,16 +16,16 @@ defaultRedirect: comchayhotay/shop/categories
 
 # Create page
 create:
-    title: Create Category
+    title: Tạo mới danh mục
     redirect: comchayhotay/shop/categories/update/:id
     redirectClose: comchayhotay/shop/categories
 
 # Update page
 update:
-    title: Edit Category
+    title: Chỉnh sửa danh mục
     redirect: comchayhotay/shop/categories
     redirectClose: comchayhotay/shop/categories
 
 # Preview page
 preview:
-    title: Preview Category
+    title: Xem trước danh mục

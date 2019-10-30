@@ -9,7 +9,7 @@ list: $/comchayhotay/shop/models/customer_info/columns.yaml
 modelClass: Comchayhotay\Shop\Models\CustomerInfo
 
 # List Title
-title: Manage Customer Infos
+title: Quản lý thông tin khách hàng
 
 # Link URL for each record
 recordUrl: comchayhotay/shop/customerinfos/update/:id

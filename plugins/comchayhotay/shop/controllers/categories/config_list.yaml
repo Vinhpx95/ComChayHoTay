@@ -9,7 +9,7 @@ list: $/comchayhotay/shop/models/category/columns.yaml
 modelClass: Comchayhotay\Shop\Models\Category
 
 # List Title
-title: Manage Categories
+title: Quản lý danh mục
 
 # Link URL for each record
 recordUrl: comchayhotay/shop/categories/update/:id

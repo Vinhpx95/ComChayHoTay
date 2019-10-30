@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('comchayhotay/shop/banners') ?>">Banners</a></li>
+        <li><a href="<?= Backend::url('comchayhotay/shop/banners') ?>">Banner</a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -21,7 +21,7 @@
                     data-hotkey="ctrl+s, cmd+s"
                     data-load-indicator="Creating Banner..."
                     class="btn btn-primary">
-                    Create
+                    Tạo mới
                 </button>
                 <button
                     type="button"
@@ -30,10 +30,10 @@
                     data-hotkey="ctrl+enter, cmd+enter"
                     data-load-indicator="Creating Banner..."
                     class="btn btn-default">
-                    Create and Close
+                    Tạo mới và về trang danh sách
                 </button>
                 <span class="btn-text">
-                    or <a href="<?= Backend::url('comchayhotay/shop/banners') ?>">Cancel</a>
+                    hoặc <a href="<?= Backend::url('comchayhotay/shop/banners') ?>">Hủy</a>
                 </span>
             </div>
         </div>
@@ -43,6 +43,6 @@
 <?php else: ?>
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-    <p><a href="<?= Backend::url('comchayhotay/shop/banners') ?>" class="btn btn-default">Return to banners list</a></p>
+    <p><a href="<?= Backend::url('comchayhotay/shop/banners') ?>" class="btn btn-default">Về trang danh sách</a></p>
 
 <?php endif ?>

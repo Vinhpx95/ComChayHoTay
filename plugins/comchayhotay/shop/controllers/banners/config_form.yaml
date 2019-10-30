@@ -16,7 +16,7 @@ defaultRedirect: comchayhotay/shop/banners
 
 # Create page
 create:
-    title: Create Banner
+    title: Tạo mới banner
     redirect: comchayhotay/shop/banners/update/:id
     redirectClose: comchayhotay/shop/banners
 

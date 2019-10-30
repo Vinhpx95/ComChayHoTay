@@ -2,7 +2,7 @@
     <a
         href="<?= Backend::url('comchayhotay/shop/banners/create') ?>"
         class="btn btn-primary oc-icon-plus">
-        New Banner
+        Tạo mới
     </a>
 
     <button
@@ -10,12 +10,12 @@
         disabled="disabled"
         onclick="$(this).data('request-data', { checked: $('.control-list').listWidget('getChecked') })"
         data-request="onDelete"
-        data-request-confirm="Are you sure you want to delete the selected Banners?"
+        data-request-confirm="Bạn có chắc khi xóa Banner này?"
         data-trigger-action="enable"
         data-trigger=".control-list input[type=checkbox]"
         data-trigger-condition="checked"
         data-request-success="$(this).prop('disabled', 'disabled')"
         data-stripe-load-indicator>
-        Delete selected
+        Xóa
     </button>
 </div>

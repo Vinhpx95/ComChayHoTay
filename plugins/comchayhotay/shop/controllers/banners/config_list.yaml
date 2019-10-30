@@ -9,7 +9,7 @@ list: $/comchayhotay/shop/models/banner/columns.yaml
 modelClass: Comchayhotay\Shop\Models\Banner
 
 # List Title
-title: Manage Banners
+title: Quản lý banner
 
 # Link URL for each record
 recordUrl: comchayhotay/shop/banners/update/:id
