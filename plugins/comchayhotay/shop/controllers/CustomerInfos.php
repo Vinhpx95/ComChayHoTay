@@ -20,6 +20,6 @@ class CustomerInfos extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Comchayhotay.Shop', 'shop', 'customer_infos');
+        BackendMenu::setContext('Comchayhotay.Shop', 'shop', 'customerinfos');
     }
 }

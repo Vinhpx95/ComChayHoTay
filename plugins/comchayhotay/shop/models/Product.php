@@ -28,6 +28,14 @@ class Product extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'slug' => 'required|unique',
+        'category_id' => 'required|numeric',
+        'name' => 'required',
+        'price' => 'required|numeric',
+        'status' => 'required|numeric',
+    ];
+
     /**
      * @var array Relations
      */

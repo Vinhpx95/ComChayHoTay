@@ -22,6 +22,12 @@ class OrderProduct extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'order_id' => 'required|numeric',
+        'product_id' => 'required|numeric',
+        'quantity' => 'required|numeric',
+    ];
+
     /**
      * @var array Relations
      */

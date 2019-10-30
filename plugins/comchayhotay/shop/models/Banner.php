@@ -24,7 +24,8 @@ class Banner extends Model
 
     protected $rules = [
         'title' => 'required',
-        ''
+        'image' => 'required',
+        'event_slug' => 'required'
     ];
 
     /**

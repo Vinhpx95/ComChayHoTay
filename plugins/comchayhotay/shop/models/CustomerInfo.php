@@ -24,6 +24,13 @@ class CustomerInfo extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'name' => 'required',
+        'phone' => 'required|regex:/^\d{10}$/',
+        'address' => 'required',
+        'email' => 'email'
+    ];
+
     /**
      * @var array Relations
      */

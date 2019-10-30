@@ -113,6 +113,12 @@ class Plugin extends PluginBase
                         'url'         => Backend::url('comchayhotay/shop/products'),
                         'permissions' => ['comchayhotay.shop.*'],
                     ],
+                    'ingredients' => [
+                        'label'       => 'Nguyên liệu',
+                        'icon'        => 'icon-cubes',
+                        'url'         => Backend::url('comchayhotay/shop/ingredients'),
+                        'permissions' => ['comchayhotay.shop.*'],
+                    ],
                     'categories' => [
                         'label'       => 'Danh mục',
                         'icon'        => 'icon-list',
@@ -122,13 +128,13 @@ class Plugin extends PluginBase
                     'customer_infos' => [
                         'label'       => 'Thông tin khách hàng',
                         'icon'        => 'icon-copy',
-                        'url'         => Backend::url('comchayhotay/shop/customer_infos'),
+                        'url'         => Backend::url('comchayhotay/shop/customerinfos'),
                         'permissions' => ['comchayhotay.shop.*'],
                     ],
                     'restaurant_info' => [
                         'label'       => 'Thông tin nhà hàng',
                         'icon'        => 'icon-info-circle',
-                        'url'         => Backend::url('comchayhotay/shop/restaurant_info'),
+                        'url'         => Backend::url('comchayhotay/shop/restaurantinfo'),
                         'permissions' => ['comchayhotay.shop.*'],
                     ],
                 ]

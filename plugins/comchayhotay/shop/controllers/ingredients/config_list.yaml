@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/comchayhotay/shop/models/restaurant_info/columns.yaml
+list: $/comchayhotay/shop/models/ingredient/columns.yaml
 
 # Model Class name
-modelClass: Comchayhotay\Shop\Models\RestaurantInfo
+modelClass: Comchayhotay\Shop\Models\Ingredient
 
 # List Title
-title: Manage Restaurant Infos
+title: Manage Ingredients
 
 # Link URL for each record
-recordUrl: comchayhotay/shop/restaurant_info/update/:id
+recordUrl: comchayhotay/shop/ingredients/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

@@ -12,7 +12,7 @@ modelClass: Comchayhotay\Shop\Models\CustomerInfo
 title: Manage Customer Infos
 
 # Link URL for each record
-recordUrl: comchayhotay/shop/customer_infos/update/:id
+recordUrl: comchayhotay/shop/customerinfos/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

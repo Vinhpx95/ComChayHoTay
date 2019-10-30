@@ -11,6 +11,7 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->string('slug')->unique();
             $table->string('title');
             $table->string('content');
             $table->dateTime('start_date');

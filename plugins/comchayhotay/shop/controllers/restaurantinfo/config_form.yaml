@@ -12,19 +12,19 @@ form: $/comchayhotay/shop/models/restaurant_info/fields.yaml
 modelClass: Comchayhotay\Shop\Models\RestaurantInfo
 
 # Default redirect location
-defaultRedirect: comchayhotay/shop/restaurant_info
+defaultRedirect: comchayhotay/shop/restaurantinfo
 
 # Create page
 create:
     title: Create Restaurant Info
-    redirect: comchayhotay/shop/restaurant_info/update/:id
-    redirectClose: comchayhotay/shop/restaurant_info
+    redirect: comchayhotay/shop/restaurantinfo/update/:id
+    redirectClose: comchayhotay/shop/restaurantinfo
 
 # Update page
 update:
     title: Edit Restaurant Info
-    redirect: comchayhotay/shop/restaurant_info
-    redirectClose: comchayhotay/shop/restaurant_info
+    redirect: comchayhotay/shop/restaurantinfo
+    redirectClose: comchayhotay/shop/restaurantinfo
 
 # Preview page
 preview:

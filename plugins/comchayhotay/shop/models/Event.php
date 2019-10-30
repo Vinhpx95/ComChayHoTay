@@ -23,6 +23,7 @@ class Event extends Model
     protected $fillable = [];
 
     protected $rules = [
+        'title' => 'required|unique',
         'title' => 'required',
         'content' => 'required',
         'start_date' => 'required',

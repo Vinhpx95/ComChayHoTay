@@ -58,4 +58,10 @@
   'Comchayhotay\\Shop\\Models\\Event' => 'plugins\\comchayhotay\\shop\\models\\Event.php',
   'comchayhotay\\shop\\Controllers\\categories' => 'plugins\\comchayhotay\\shop\\controllers\\categories.php',
   'Comchayhotay\\Shop\\Models\\Category' => 'plugins\\comchayhotay\\shop\\models\\Category.php',
+  'comchayhotay\\shop\\Controllers\\ingredients' => 'plugins\\comchayhotay\\shop\\controllers\\ingredients.php',
+  'Comchayhotay\\Shop\\Models\\Ingredient' => 'plugins\\comchayhotay\\shop\\models\\Ingredient.php',
+  'comchayhotay\\shop\\Controllers\\customerinfos' => 'plugins\\comchayhotay\\shop\\controllers\\customerinfos.php',
+  'Comchayhotay\\Shop\\Models\\CustomerInfo' => 'plugins\\comchayhotay\\shop\\models\\CustomerInfo.php',
+  'comchayhotay\\shop\\Controllers\\restaurantinfo' => 'plugins\\comchayhotay\\shop\\controllers\\restaurantinfo.php',
+  'Comchayhotay\\Shop\\Models\\RestaurantInfo' => 'plugins\\comchayhotay\\shop\\models\\RestaurantInfo.php',
 );

@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('comchayhotay/shop/customer_infos') ?>">Customer Infos</a></li>
+        <li><a href="<?= Backend::url('comchayhotay/shop/ingredients') ?>">Ingredients</a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -20,7 +20,7 @@
                     data-request="onSave"
                     data-request-data="redirect:0"
                     data-hotkey="ctrl+s, cmd+s"
-                    data-load-indicator="Saving Customer_info..."
+                    data-load-indicator="Saving Ingredient..."
                     class="btn btn-primary">
                     <u>S</u>ave
                 </button>
@@ -29,7 +29,7 @@
                     data-request="onSave"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
-                    data-load-indicator="Saving Customer_info..."
+                    data-load-indicator="Saving Ingredient..."
                     class="btn btn-default">
                     Save and Close
                 </button>
@@ -37,11 +37,11 @@
                     type="button"
                     class="oc-icon-trash-o btn-icon danger pull-right"
                     data-request="onDelete"
-                    data-load-indicator="Deleting Customer_info..."
-                    data-request-confirm="Delete this customer_info?">
+                    data-load-indicator="Deleting Ingredient..."
+                    data-request-confirm="Delete this ingredient?">
                 </button>
                 <span class="btn-text">
-                    or <a href="<?= Backend::url('comchayhotay/shop/customer_infos') ?>">Cancel</a>
+                    or <a href="<?= Backend::url('comchayhotay/shop/ingredients') ?>">Cancel</a>
                 </span>
             </div>
         </div>
@@ -51,6 +51,6 @@
 <?php else: ?>
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-    <p><a href="<?= Backend::url('comchayhotay/shop/customer_infos') ?>" class="btn btn-default">Return to customer infos list</a></p>
+    <p><a href="<?= Backend::url('comchayhotay/shop/ingredients') ?>" class="btn btn-default">Return to ingredients list</a></p>
 
 <?php endif ?>

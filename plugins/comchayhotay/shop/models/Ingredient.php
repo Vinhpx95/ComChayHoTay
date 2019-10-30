@@ -22,6 +22,10 @@ class Ingredient extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'name' => 'required'
+    ];
+
     /**
      * @var array Relations
      */

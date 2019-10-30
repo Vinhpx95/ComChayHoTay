@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Ingredient
+
+# Model Form Field configuration
+form: $/comchayhotay/shop/models/ingredient/fields.yaml
+
+# Model Class name
+modelClass: Comchayhotay\Shop\Models\Ingredient
+
+# Default redirect location
+defaultRedirect: comchayhotay/shop/ingredients
+
+# Create page
+create:
+    title: Create Ingredient
+    redirect: comchayhotay/shop/ingredients/update/:id
+    redirectClose: comchayhotay/shop/ingredients
+
+# Update page
+update:
+    title: Edit Ingredient
+    redirect: comchayhotay/shop/ingredients
+    redirectClose: comchayhotay/shop/ingredients
+
+# Preview page
+preview:
+    title: Preview Ingredient

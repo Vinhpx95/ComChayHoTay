@@ -12,19 +12,19 @@ form: $/comchayhotay/shop/models/customer_info/fields.yaml
 modelClass: Comchayhotay\Shop\Models\CustomerInfo
 
 # Default redirect location
-defaultRedirect: comchayhotay/shop/customer_infos
+defaultRedirect: comchayhotay/shop/customerinfos
 
 # Create page
 create:
     title: Create Customer Info
-    redirect: comchayhotay/shop/customer_infos/update/:id
-    redirectClose: comchayhotay/shop/customer_infos
+    redirect: comchayhotay/shop/customerinfos/update/:id
+    redirectClose: comchayhotay/shop/customerinfos
 
 # Update page
 update:
     title: Edit Customer Info
-    redirect: comchayhotay/shop/customer_infos
-    redirectClose: comchayhotay/shop/customer_infos
+    redirect: comchayhotay/shop/customerinfos
+    redirectClose: comchayhotay/shop/customerinfos
 
 # Preview page
 preview:

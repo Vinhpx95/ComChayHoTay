@@ -22,6 +22,15 @@ class Order extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'total_price' => 'required|numeric',
+        'customer_info_id' => 'required|numeric',
+        'ship_fee' => 'required|numeric',
+        'status' => 'required|numeric',
+        'payment_method' => 'required|numeric',
+        'date' => 'required'
+    ];
+
     /**
      * @var array Relations
      */

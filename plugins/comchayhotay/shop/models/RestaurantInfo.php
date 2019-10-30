@@ -22,6 +22,16 @@ class RestaurantInfo extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'phone1' => 'required|regex:/^\d{10}$/',
+        'phone2' => 'required|regex:/^\d{10}$/',
+        'open_time' => 'required',
+        'email' => 'required|email',
+        'facebook' => 'required',
+        'zalo' => 'required',
+        'address' => 'required'
+    ];
+
     /**
      * @var array Relations
      */

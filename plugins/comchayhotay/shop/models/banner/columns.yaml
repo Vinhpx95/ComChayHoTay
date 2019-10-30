@@ -10,5 +10,5 @@ columns:
         sortable: true
     activated:
         label: 'Hoạt động'
-        type: text
+        type: switch
         sortable: true
