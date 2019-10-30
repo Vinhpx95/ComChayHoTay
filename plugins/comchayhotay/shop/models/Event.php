@@ -28,7 +28,7 @@ class Event extends Model
         'title' => 'required',
         'content' => 'required',
         'start_date' => 'required',
-        'end_date' => 'required|after:start_date'
+        'end_date' => 'required|after_or_equal:start_date'
     ];
 
     /**
