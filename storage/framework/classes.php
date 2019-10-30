@@ -52,4 +52,10 @@
   'RainLab\\Builder\\Widgets\\DefaultControlDesignTimeProvider' => 'plugins\\rainlab\\builder\\widgets\\DefaultControlDesignTimeProvider.php',
   'RainLab\\Builder\\Components\\RecordList' => 'plugins\\rainlab\\builder\\components\\RecordList.php',
   'RainLab\\Builder\\Components\\RecordDetails' => 'plugins\\rainlab\\builder\\components\\RecordDetails.php',
+  'comchayhotay\\shop\\Controllers\\banners' => 'plugins\\comchayhotay\\shop\\controllers\\banners.php',
+  'Comchayhotay\\Shop\\Models\\Banner' => 'plugins\\comchayhotay\\shop\\models\\Banner.php',
+  'comchayhotay\\shop\\Controllers\\events' => 'plugins\\comchayhotay\\shop\\controllers\\events.php',
+  'Comchayhotay\\Shop\\Models\\Event' => 'plugins\\comchayhotay\\shop\\models\\Event.php',
+  'comchayhotay\\shop\\Controllers\\categories' => 'plugins\\comchayhotay\\shop\\controllers\\categories.php',
+  'Comchayhotay\\Shop\\Models\\Category' => 'plugins\\comchayhotay\\shop\\models\\Category.php',
 );
