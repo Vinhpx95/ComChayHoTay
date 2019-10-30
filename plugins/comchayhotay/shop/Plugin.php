@@ -98,7 +98,7 @@ class Plugin extends PluginBase
                     'events' => [
                         'label'       => 'Sự kiện',
                         'icon'        => 'icon-gift',
-                        'url'         => Backend::url('comchayhotay/shop/event'),
+                        'url'         => Backend::url('comchayhotay/shop/events'),
                         'permissions' => ['comchayhotay.shop.*'],
                     ],
                     'banners' => [

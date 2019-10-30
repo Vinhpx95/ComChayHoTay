@@ -22,6 +22,11 @@ class Banner extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'title' => 'required',
+        ''
+    ];
+
     /**
      * @var array Relations
      */
@@ -32,6 +37,8 @@ class Banner extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'image' => 'System\Models\File'
+    ];
     public $attachMany = [];
 }

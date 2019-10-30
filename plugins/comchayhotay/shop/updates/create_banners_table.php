@@ -14,6 +14,7 @@ class CreateBannersTable extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('event_slug');
+            $table->integer('activated')->default(0);
         });
     }
 

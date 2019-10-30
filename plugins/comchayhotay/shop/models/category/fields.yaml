@@ -1,8 +1,7 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
-    id:
-        label: ID
-        disabled: true
+    name:
+        label: Tên
+        span: auto
+        disabled: 0
+        required: 1
+        type: text

@@ -1,8 +1,14 @@
-# ===================================
-#  List Column Definitions
-# ===================================
-
 columns:
     id:
         label: ID
+        type: number
         searchable: true
+    title:
+        label: 'Tiêu đề'
+        type: text
+        searchable: true
+        sortable: true
+    activated:
+        label: 'Hoạt động'
+        type: text
+        sortable: true

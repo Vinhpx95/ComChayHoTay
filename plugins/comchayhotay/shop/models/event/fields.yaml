@@ -1,8 +1,28 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
-    id:
-        label: ID
-        disabled: true
+    title:
+        label: 'Tiêu đề'
+        span: full
+        disabled: 0
+        required: 1
+        type: text
+    content:
+        label: 'Nội dung'
+        size: huge
+        mode: tab
+        span: full
+        required: 1
+        type: markdown
+    start_date:
+        label: 'Ngày bắt đầu'
+        mode: datetime
+        yearRange: '2'
+        span: auto
+        required: 1
+        type: datepicker
+    end_date:
+        label: 'Ngày kết thúc'
+        mode: datetime
+        yearRange: '2'
+        span: auto
+        required: 1
+        type: datepicker

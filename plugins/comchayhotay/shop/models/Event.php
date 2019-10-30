@@ -22,6 +22,13 @@ class Event extends Model
      */
     protected $fillable = [];
 
+    protected $rules = [
+        'title' => 'required',
+        'content' => 'required',
+        'start_date' => 'required',
+        'end_date' => 'required|after:start_date'
+    ];
+
     /**
      * @var array Relations
      */
