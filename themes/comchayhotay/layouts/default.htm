@@ -2,42 +2,92 @@ description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
-        <meta name="description" content="{{ this.page.meta_description }}">
-        <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="OctoberCMS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content="OctoberCMS">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
-        {% styles %}
-    </head>
-    <body>
 
-        <!-- Header -->
-        <header id="layout-header">
-            {% partial 'site/header' %}
-        </header>
+<head>
+    <meta charset="utf-8">
+    <title>Cơm chay Hồ Tây</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="Cơm chay Hồ Tây">
+    <meta name="author" content="Cơm chay Hồ Tây">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Cơm chay Hồ Tây">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/lotus.png'|theme }}">
+    <!-- Bootstrap -->
+    <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i%7cZilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="{{ 'assets/css/owl.carousel.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/owl.theme.default.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/jquery-ui.css'|theme }}" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fontello.css'|theme }}">
+    <link href="{{ 'assets/css/font-awesome.min.css'|theme }}" rel="stylesheet">
+    {% styles %}
+</head>
 
-        <!-- Content -->
-        <section id="layout-content">
-            {% page %}
-        </section>
+<body>
+    <!-- top-bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
+                    <div class="support-bar">
+                        <span class="support-icon"><i class="icon-circular-clock"></i></span>
+                        <p class="support-text">
+                            Mon to Fri : 11:00am - 10:00pm
+                            <br> Sat to Sun : 08:00am - 11:00pm
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-2 col-xs-12">
+                    <div class="logo"><a href="index.html"><img src="{{ 'assets/images/lotus.png'|theme }}" alt="" width="90px" height="90px"></a></div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
+                    <div class="support-bar">
+                        <div class="support-icon"><i class="icon-at-email"></i></div>
+                        <p class="support-text"> 167 Science Center Drive, USA
+                            <br> +180-123-4567
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.top-bar -->
+    <!-- Header -->
+    <div class="header-wrapper">
+        {% partial 'site/header' %}
+    </div>
 
-        <!-- Footer -->
-        <footer id="layout-footer">
-            {% partial 'site/footer' %}
-        </footer>
+    <!-- Content -->
+    {% page %}
 
-        <!-- Scripts -->
-        <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-        <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-        <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-        {% framework extras %}
-        {% scripts %}
+    <!-- Footer -->
+    <div class="footer">
+        {% partial 'site/footer' %}
+    </div>
 
-    </body>
+    <!-- Scripts -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ 'assets/javascript/jquery.min.js'|theme }}" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ 'assets/javascript/bootstrap.min.js'|theme }}" type="text/javascript"></script>
+    <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+    
+    <script src="{{ 'assets/javascript/menumaker.js'|theme }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/jquery.sticky.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/sticky-header.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/owl.carousel.min.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/multiple-carousel.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/jquery-ui.js'|theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/date.js'|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+
+</body>
+
 </html>

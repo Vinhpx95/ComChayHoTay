@@ -1,120 +1,496 @@
 title = "Demonstration"
 url = "/"
 layout = "default"
+is_hidden = 0
 ==
-<div class="jumbotron">
-    <div class="container">
-        {% content "welcome.htm" %}
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="page-header">
-        <h2>Overview <small>Basic concepts</small></h2>
-    </div>
-    <p>
-        This page demonstrates the basic CMS features.
-        Usually each page built with October is a combination of a layout, page, partials and content blocks,
-        although in simple cases you can just use a page without anything else.
-    </p>
-
-    <!-- Layouts -->
-    <h3>Layouts</h3>
-    <p class="lead">
-        <i class="icon-th-large"></i> &nbsp; Layouts define the page scaffold.
-    </p>
-    <p>
-        The layout file <code>layouts/default.htm</code> defines the page scaffold &mdash;
-        everything that repeats on each page, such as the HTML, HEAD and BODY tags, StyleSheet and JavaScript references.
-    </p>
-    <p>The page menu and footer in the Demo theme are defined in the layout as well.</p>
-
-    <hr />
-
-    <!-- Pages -->
-    <h3>Pages</h3>
-    <p class="lead">
-        <i class="icon-copy"></i> &nbsp; Pages hold the content for each URL.
-    </p>
-    <p>
-        The page file <code>pages/home.htm</code> defines the page URL (<code>/</code> for this page) and the page content.
-        Pages are rendered inside layouts with this function that should be called in the layout code:
-    </p>
-    <pre>{{ "{% page %}" }}</pre>
-    <p>Using a layout for pages is optional &mdash; you can define everything right in the page file.</p>
-
-    <hr />
-
-    <!-- Partials -->
-    <h3>Partials</h3>
-    <p class="lead">
-        <i class="icon-tags"></i> &nbsp; Partials contain reusable chunks of HTML markup.
-    </p>
-    <p>
-        Partials are chunks of HTML defined in separate files that can be included anywhere.
-        Partials are rendered with:
-    </p>
-    <pre>{{ "{% partial \"partial-name\" %}" }}</pre>
-    <p>You may place partials inside folders too. In this example we placed the footer content to the <code>partials/site/footer.htm</code> partial.</p>
-    <pre>{{ "{% partial \"site/footer\" %}" }}</pre>
-    <p>Partials can be used inside pages, layouts or other partials.</p>
-
-    <hr />
-
-    <!-- Content blocks -->
-    <h3>Content blocks</h3>
-    <p class="lead">
-        <i class="icon-font"></i> &nbsp; Content blocks are text or HTML blocks that can be edited separately from the page or layout.
-    </p>
-    <p>
-        The introductory text used on this page is defined in the <code>content/welcome.htm</code> file.
-        Content blocks are defined and rendered with:
-        <pre>{{ "{% content \"content-name.htm\" %}" }}</pre>
-    </p>
-
-    <hr />
-
-    <!-- Placeholders -->
-    <h3>Placeholders</h3>
-    <p class="lead">
-        <i class="icon-bookmark"></i> &nbsp; Placeholders allow pages to inject content to a layout.
-    </p>
-    <p>
-        The common use is injecting page-specific links to StyleSheet or JavaScript files to the HEAD tag defined in the layout.
-        Placeholders are defined in the layout file and they have names so that they can be referred in the page.
-        Example:
-    </p>
-    <div class="row">
-        <div class="col-md-6">
-            <p>Layout file:</p>
-            <pre>{% content "placeholder/layout.txt" %}</pre>
-        </div>
-        <div class="col-md-6">
-            <p>Page file:</p>
-            <pre>{% content "placeholder/page.txt" %}</pre>
+<!-- slider -->
+    <div class="slider">
+        <div class="owl-carousel owl-one owl-theme">
+            <div class="item">
+                <div class="slider-img"> <img src="{{ 'assets/images/slider_1.jpg'|theme }}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Restaurant Responsive Free Template</h1>
+                                <p class="slider-text hidden-sm hidden-xs">Morbi rutrum neque diamr turpis lorem ipsum dauisque.
+                                </p>
+                                <a href="#" class="btn btn-default btn-lg hidden-sm hidden-xs">Reserve Your Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="{{ 'assets/images/slider_2.jpg'|theme }}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12  col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Vegan Restaurant Bootstrap Website Template</h1>
+                                <p class="slider-text hidden-sm hidden-xs">Integer ac pharetra arcu, nec porttitor uis idleo sagittis cursus. </p>
+                                <a href="#" class="btn btn-default btn-lg hidden-sm hidden-xs">Get Free Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="{{ 'assets/images/slider_3.jpg'|theme }}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12  col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Vegiterian Restaurant Free Website
+ </h1>
+                                <p class="slider-text hidden-sm hidden-xs">Duisac semper lacus,at fringilla arcuuspendisse arcu ipsum. </p>
+                                <a href="#" class="btn btn-default btn-lg hidden-sm hidden-xs">Download Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <hr />
-
-    <!-- Assets -->
-    <h3>Assets</h3>
-    <p class="lead">
-        <i class="icon-picture"></i> &nbsp; Assets are resource files like images and stylesheets.
-    </p>
-    <p>This theme stores its asset files (JavaScript, StyleSheet, images, fonts, etc) in the <code>themes/demo/assets</code> directory. This theme is also packaged with these useful 3rd party tools:</p>
-    <ul class="list-inline">
-        <li><a target="_blank" href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
-        <li><a target="_blank" href="http://fontawesome.io/3.2.1/">Font Awesome</a></li>
-        <li><a target="_blank" href="http://www.google.com/fonts/specimen/Lato">Lato webfont</a></li>
-    </ul>
-    <p>You might prefer to remove them for your website implementation.</p>
-
-    <br />
-
-    <div class="text-center">
-        <p><a href="{{ 'ajax'|page }}" class="btn btn-lg btn-default">Continue to AJAX framework</a></p>
+    <!-- /.slider -->
+    <!-- menu -->
+    <div class="space-medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2>Vegan Menu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- starter -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Starter</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_1.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Aloo and Dal ki Tikki</a></h5>
+                                        <span class="dish-meta">Onion  /  Tomato</span>
+                                        <div class="dish-price">
+                                        <p>$10</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_2.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Cheese Balls</a></h5>
+                                        <span class="dish-meta">puffed corn  /  cheese-flavored  
+                                            <div class="dish-price">
+                                        <p>$8</p>
+                                    </div>
+</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_3.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Veg Crispy</a> </h5>
+                                        <span class="dish-meta">Ginger garlic /  Black pepper</span>
+                                        <div class="dish-price">
+                                        <p>$12</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.starter -->
+                <!-- Soup -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Soup</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_4.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Minestrone</a></h5>
+                                        <span class="dish-meta"> beans  / onions celery / carrots</span>
+                                        <div class="dish-price">
+                                        <p>$15</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_5.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Tomato soup</a></h5>
+                                        <span class="dish-meta">Cheesiy   / Creamy  /  Sweet</span>
+                                        <div class="dish-price">
+                                        <p>$14</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_6.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Cream of broccoli</a> </h5>
+                                        <span class="dish-meta"> broccoli /  milk  / cream </span>
+                                         <div class="dish-price">
+                                        <p>$9</p>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.soup -->
+                <!-- main course -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu-block">
+                        <h3 class="menu-title">Main Course</h3>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_7.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Biryani</a></h5>
+                                        <span class="dish-meta"> Onion  /  Tomato</span>
+                                         <div class="dish-price">
+                                        <p>$14</p>
+                                    </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_8.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Paneer Butter Masala</a></h5>
+                                        <span class="dish-meta">Aloo Masala  /  Aloo Palak
+</span>
+<div class="dish-price">
+                                        <p>$11</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="dish-img"><a href="#"><img src="{{ 'assets/images/menu_dish_9.jpg'|theme }}" alt="" class="img-circle"></a></div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                    <div class="dish-content">
+                                        <h5 class="dish-title"><a href="#">Chole Bhature</a> </h5>
+                                        <span class="dish-meta"> Rice Soft Idli  /  Ragi idli  /  Oats Idli </span>
+                                        <div class="dish-price">
+                                        <p>$8</p>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.main Course -->
+            </div>
+        </div>
     </div>
+    <!-- /.menu -->
+    <!-- menu-thumb -->
+    <div class="thumb-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2>Vegan Menu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nopr nopl">
+                    <div class="thumb-block">
+                        <div class="thumb-img">
+                            <img src="{{ 'assets/images/dish_thumb_1.jpg'|theme }}" alt="" class="img-responsive ">
+                        </div>
+                        <div class="thumb-content">
+                            <h3 class="thumb-title">Dosa</h3>
+                            <p class="thumb-text">Vivamus venenatis l elit imperdies eneande.</p>
+                            <p class="thumb-price">$12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nopr nopl">
+                    <div class="thumb-block">
+                        <div class="thumb-img">
+                            <img src="{{ 'assets/images/dish_thumb_2.jpg'|theme }}" alt="" class="img-responsive ">
+                        </div>
+                        <div class="thumb-content">
+                            <h3 class="thumb-title">Chaat</h3>
+                            <p class="thumb-text">Morbi rutrum neque diamr turpis dauisque.</p>
+                            <p class="thumb-price">$10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nopr nopl">
+                    <div class="thumb-block">
+                        <div class="thumb-img">
+                            <img src="{{ 'assets/images/dish_thumb_3.jpg'|theme }}" alt="" class="img-responsive ">
+                        </div>
+                        <div class="thumb-content">
+                            <h3 class="thumb-title">Chahou Kheer</h3>
+                            <p class="thumb-text">Donec ornare feliel n condintum clentesque.</p>
+                            <p class="thumb-price">$14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nopr nopl">
+                    <div class="thumb-block">
+                        <div class="thumb-img">
+                            <img src="{{ 'assets/images/dish_thumb_4.jpg'|theme }}" alt="" class="img-responsive ">
+                        </div>
+                        <div class="thumb-content">
+                            <h3 class="thumb-title">Aloo Baingan Masala</h3>
+                            <p class="thumb-text">Nulla dictum dio sed lectus tincidunt sollies.</p>
+                            <p class="thumb-price">$15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.menu-thumb -->
+    <!-- testimonails -->
+    <div class="space-medium bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                    <div class="testimonial-icon">
+                                        <img src="{{ 'assets/images/quote_icon.png'|theme }}" alt="">
+                                    </div>
+                                    <h2 class="testimonial-title">What Our Customers Say</h2>
+                                </div>
 
-</div>
+                </div>
+
+
+            </div>
+
+
+            <div class="testimonials-carousel">
+                <div class="owl-carousel owl-two owl-theme">
+                    <!-- testimonials -->
+                    <div class="item">
+                        <!-- testimonials -->
+                        <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-content">
+                                    
+                                    <p class="testimonial-text">“Aenean aliquam gravida leet tempor sapieneses oesed setsagittis porthasus exeros mattisnon one augues necdu llaorper loremci variuse.”</p>
+                                    <div class="testimonial-meta">
+                                        <p class="testimonial-user">Terry Byrdr</p>
+                                        <div class="star-rating">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.testimonials -->
+                    <!-- testimonials -->
+                    <div class="item">
+                        <!-- testimonials -->
+                        <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-content">
+                                    
+                                    <p class="testimonial-text">“Integer in magna gravida dui aliquet pharetra. Quisque feugiat erat tortor, egeteget massa esulum ultricies miutmi cursus congue.”</p>
+                                    <div class="testimonial-meta">
+                                        <p class="testimonial-user">Miam Luptin</p>
+                                        <div class="star-rating">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.testimonials -->
+                    <!-- testimonials -->
+                    <div class="item">
+                        <!-- testimonials -->
+                        <div class="col-lg-offset-1 col-lg-10 col-lg-offset-1 col-lg-10 col-sm-12 col-xs-12">
+                            <div class="testimonial-block">
+                                <div class="testimonial-content">
+                                    
+                                    <p class="testimonial-text">“Cras venenatis nulla ac diam varius, venenatis iaculis lorem ipsum doklro sit nibh consectetur. Pellentesturpis egestas.”</p>
+                                    <div class="testimonial-meta">
+                                        <p class="testimonial-user">Olga Medley</p>
+                                        <div class="star-rating">
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                            <span><i class="fa fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.testimonials -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.testimonails -->
+    <div class="space-medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-lg-4 col-sm-5 col-xs-12">
+                    <div class="widget-schedule">
+                        <div class="schedule-content">
+                            <h3 class="schedule-title">Vegan Opening Hours</h3>
+                            <div class="schedule-icon">
+                                <i class="icon-cutlery-set-of-three-pieces"></i>
+                            </div>
+                            <div class="schedule-time">
+                                <h5 class="time-title">Monday - Friday</h5>
+                                <p>11:00 AM to 3:00 PM
+                                    <br>7:00 PM to 10:00 PM</p>
+                            </div>
+                            <div class="schedule-time">
+                                <h5 class="time-title">Saturday - Sunday</h5>
+                                <p>11:00 AM to 3:00 PM
+                                    <br>7:00 PM to 11:00 PM</p>
+                            </div>
+                            <div class="schedule-line"></div>
+                            <div class="schedule-call">+180-123-4567</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-lg-8 col-sm-7 col-xs-12">
+                    <div class="book-form">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2 class="mb30">Personal Informations</h2>
+
+                            </div>
+                            <form>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only" for="name"> Name</label>
+                                        <input id="name" type="text" placeholder="Name" class="form-control" required>
+                                    </div>
+                                </div>
+                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only" for="email"> Email</label>
+                                        <input id="email" type="text" placeholder="Email" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only" for="phone"> Phone</label>
+                                        <input id="phone" type="text" placeholder="Phone" class="form-control" required>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="datepicker">Date</label>
+                                        <div class="input-group">
+                                            <input id="datepicker" name="datepicker" type="text" placeholder="Date" class="form-control" required="">
+                                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></span> </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb20">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only required" >Time</label>
+                                        <select  name="select" class="form-control">
+                                            <option value="">Timing</option>
+                                            <option value="">08:00am to 03:00pm</option>
+                                            <option value="">07:00pm to 12:00pm</option>
+                                          
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label class="control-label sr-only required">Number of People</label>
+                                        <select  name="select" class="form-control">
+                                            <option value="">Number of People</option>
+                                            <option value="">2 Guests</option>
+                                            <option value="">6 Guests</option>
+                                            <option value="">8 Guests</option>
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" name="singlebutton" class="btn btn-primary">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

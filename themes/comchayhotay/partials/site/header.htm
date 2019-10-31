@@ -1,22 +1,38 @@
-<!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-            </ul>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!-- navigations-->
+            <div class="navigation">
+                <div id="navigation">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a>
+                        </li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="zoom-gallery.html">Gallery</a></li>
+                        <li class="has-sub"><a href="blog-default.html">Blog</a>
+                            <ul>
+                                <li><a href="blog-default.html">Blog Default</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub"><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="about.html">about</a> </li>
+                                <li><a href="testimonial.html">Testimonials</a> </li>
+                                <li><a href="404-page.html">404 page</a> </li>
+                                <li><a href="faq.html">FAQ</a> </li>
+                                
+                                <li><a href="styleguide.html">styleguide</a> </li>
+                                <li><a href="template-feature.html">Template feature</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navigations-->
         </div>
     </div>
-</nav>
+</div>
