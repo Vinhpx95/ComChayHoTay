@@ -27,6 +27,15 @@ description = "Default layout"
     <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fontello.css'|theme }}">
     <link href="{{ 'assets/css/font-awesome.min.css'|theme }}" rel="stylesheet">
     {% styles %}
+    <style>
+        .restaurant-name {
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #1AA644;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +53,9 @@ description = "Default layout"
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-2 col-xs-12">
-                    <div class="logo"><a href="index.html"><img src="{{ 'assets/images/lotus.png'|theme }}" alt="" width="90px" height="90px"></a></div>
+                    <div class="logo"><a href="index.html"><img src="{{ 'assets/images/lotus.png'|theme }}" alt=""
+                                width="90px" height="90px"></a></div>
+                    <div class="restaurant-name">Cơm chay Hồ Tây</div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
                     <div class="support-bar">
@@ -77,7 +88,7 @@ description = "Default layout"
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ 'assets/javascript/bootstrap.min.js'|theme }}" type="text/javascript"></script>
     <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
-    
+
     <script src="{{ 'assets/javascript/menumaker.js'|theme }}" type="text/javascript"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/jquery.sticky.js'|theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/sticky-header.js'|theme }}"></script>
