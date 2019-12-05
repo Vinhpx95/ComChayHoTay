@@ -30,10 +30,18 @@ description = "Default layout"
     <style>
         .restaurant-name {
             text-align: center;
-            font-size: 36px;
+            font-size: 28px;
             text-transform: uppercase;
             color: #1AA644;
 
+        }
+        .header-infor{color: black;}
+        .text-align-center{
+            text-align: center;
+        }
+        .icon-header{
+            color: #1AA644;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -43,26 +51,25 @@ description = "Default layout"
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
-                    <div class="support-bar">
-                        <span class="support-icon"><i class="icon-circular-clock"></i></span>
-                        <p class="support-text">
+                <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+                    <div>
+                        <div class="text-align-center icon-header"><i class="icon-circular-clock"></i></div>
+                        <div class="text-align-center header-infor">
                             Mon to Fri : 11:00am - 10:00pm
                             <br> Sat to Sun : 08:00am - 11:00pm
-                        </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-2 col-xs-12">
+                <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
                     <div class="logo"><a href="index.html"><img src="{{ 'assets/images/lotus.png'|theme }}" alt=""
                                 width="90px" height="90px"></a></div>
                     <div class="restaurant-name">Cơm chay Hồ Tây</div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
-                    <div class="support-bar">
-                        <div class="support-icon"><i class="icon-at-email"></i></div>
-                        <p class="support-text"> 167 Science Center Drive, USA
-                            <br> +180-123-4567
-                        </p>
+                <div class="col-lg-3 col-md-4 col-sm-4 hidden-xs">
+                    <div class="text-align-center icon-header"><i class="icon-at-email"></i></div>
+                    <div class="text-align-center header-infor">
+                        <div>167 Science Center Drive, USA</div>
+                        <div>+180-123-4567</div>
                     </div>
                 </div>
             </div>

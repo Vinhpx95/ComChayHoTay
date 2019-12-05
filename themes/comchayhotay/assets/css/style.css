@@ -165,7 +165,7 @@ button.btn { margin-right: -1px; }
 /*Note: Section space help to create top bottom space;*/
 
 .space-small { padding-top: 40px; padding-bottom: 40px; }
-.space-medium { padding-top: 80px; padding-bottom: 80px; }
+.space-medium { padding-top: 80px; }
 .space-large { padding-top: 120px; padding-bottom: 120px; }
 .space-ex-large { padding-top: 140px; padding-bottom: 140px; }
 
@@ -812,7 +812,7 @@ img { /*width: auto;*/ max-width: 100%; height: auto; margin: 0; padding: 0; bor
     .slider .owl-theme .owl-dots { bottom: 35px; }
     .page-section { padding-top: 70px; padding-bottom: 40px; }
     .slider .owl-dots .owl-dot span { width: 10px; height: 10px; margin: 5px 4px; background: transparent; border-radius: 50px; border: 2px solid #fff; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; }
-    .space-medium { padding-top: 45px; padding-bottom: 40px; }
+    .space-medium { padding-top: 45px;}
     .content { padding-top: 45px; padding-bottom: 40px; }
     .thumb-block { margin-bottom: 10px; }
     .ft-logo { margin-top: 0px; }
@@ -836,7 +836,7 @@ img { /*width: auto;*/ max-width: 100%; height: auto; margin: 0; padding: 0; bor
     .slider .owl-theme .owl-dots .owl-dot span { width: 5px; height: 5px; margin: 4px 3px; background: #6e726e; border-radius: 0px; border: 2px solid #6e726e; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; }
     .page-section { padding-bottom: 20px; padding-top: 20px; }
     .page-title { font-size: 30px; }
-    .space-medium { padding-top: 35px; padding-bottom: 30px; }
+    .space-medium { padding-top: 35px;}
     .content { padding-top: 35px; padding-bottom: 30px; }
     .thumb-block { margin-bottom: 10px; }
     .menu-title{margin-bottom: 15px;}
@@ -858,7 +858,7 @@ img { /*width: auto;*/ max-width: 100%; height: auto; margin: 0; padding: 0; bor
     .slider .owl-theme .owl-dots .owl-dot span { width: 5px; height: 5px; margin: 4px 3px; background: #6e726e; border-radius: 0px; border: 2px solid #6e726e; display: block; -webkit-backface-visibility: visible; transition: opacity 200ms ease; }
     .page-section { padding-bottom: 20px; padding-top: 20px; }
     .page-title { font-size: 30px; }
-    .space-medium { padding-top: 35px; padding-bottom: 30px; }
+    .space-medium { padding-top: 35px;}
     .content { padding-top: 35px; padding-bottom: 30px; }
     .thumb-block { margin-bottom: 10px; }
     .ft-logo { margin-top: 0px; }
