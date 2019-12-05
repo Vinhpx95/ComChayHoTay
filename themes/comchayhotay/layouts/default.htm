@@ -1,4 +1,6 @@
 description = "Default layout"
+
+[phoneicon]
 ==
 <!DOCTYPE html>
 <html>
@@ -88,7 +90,7 @@ description = "Default layout"
     <div class="footer">
         {% partial 'site/footer' %}
     </div>
-
+{% component 'phoneicon' %}
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ 'assets/javascript/jquery.min.js'|theme }}" type="text/javascript"></script>

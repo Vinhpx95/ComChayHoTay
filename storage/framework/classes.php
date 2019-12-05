@@ -66,4 +66,5 @@
   'Comchayhotay\\Shop\\Models\\RestaurantInfo' => 'plugins\\comchayhotay\\shop\\models\\RestaurantInfo.php',
   'comchayhotay\\shop\\Controllers\\products' => 'plugins\\comchayhotay\\shop\\controllers\\products.php',
   'Comchayhotay\\Shop\\Models\\Product' => 'plugins\\comchayhotay\\shop\\models\\Product.php',
+  'Comchayhotay\\Shop\\Components\\Phoneicon' => 'plugins\\comchayhotay\\shop\\components\\Phoneicon.php',
 );

@@ -50,10 +50,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
 
         return [
-            'Comchayhotay\Shop\Components\MyComponent' => 'myComponent',
+            'Comchayhotay\Shop\Components\Phoneicon' => 'phoneicon',
         ];
     }
 
